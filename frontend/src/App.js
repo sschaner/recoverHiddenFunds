@@ -11,19 +11,19 @@ import FAQScreen from './screens/FAQScreen';
 import ContactScreen from './screens/ContactScreen';
 import Footer from './components/Footer';
 
-const App = () => {
+const App = ({ open }) => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
         <GlobalStyles />
         <Header />
-        <main>
+        <section>
           <Route path='/' component={HomeScreen} exact />
           <Route path='/company' component={CompanyScreen} />
           <Route path='/process' component={ProcessScreen} />
           <Route path='/faq' component={FAQScreen} />
           <Route path='/contact' component={ContactScreen} />
-        </main>
+        </section>
         <Footer />
       </Router>
     </ThemeProvider>

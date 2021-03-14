@@ -13,6 +13,7 @@ export const StyledMenu = styled.nav`
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 10;
   transition: transform 0.3s ease-in-out;
 
   @media (min-width: ${({ theme }) => theme.mobile}) {
@@ -52,6 +53,7 @@ export const StyledMenu = styled.nav`
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
       display: flex;
+      align-items: center;
     }
 
     li {

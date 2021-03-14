@@ -35,7 +35,7 @@ img {
   letter-spacing: 2px;
 } */
 
-.logo {
+/* .logo {
   font-weight: bold;
   font-size: 20px;
   color: var(--secondary-color);
@@ -45,7 +45,7 @@ img {
 
 .logo__list {
   list-style: none;
-}
+} */
 
 /* .nav__list {
   list-style: none;
@@ -78,10 +78,10 @@ img {
   transform: scaleX(1);
 } */
 
-main {
+/* main {
   min-height: 80vh;
-}
+} */
 
-footer {
+/* footer {
   text-align: center;
-}
+} */
