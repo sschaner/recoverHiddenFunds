@@ -1,10 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useRef } from 'react';
+import { useOnClickOutside } from './../hooks';
+import { StyledHeader } from './Header.styled';
+import { Burger, Menu } from './../components';
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
+
   return (
-    <header>
-      <a href='/' className='logo'>
+    <StyledHeader ref={node}>
+      {/* <a href='/' className='logo'>
         <ul className='logo__list'>
           <li className='logo__name'>Home</li>
           <li className='logo__name'>Auction</li>
@@ -39,8 +45,10 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-      </nav>
-    </header>
+      </nav> */}
+      <Menu open={open} setOpen={setOpen} />
+      <Burger open={open} setOpen={setOpen} />
+    </StyledHeader>
   );
 };
 
