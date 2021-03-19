@@ -21,7 +21,7 @@ export const StyledHomeSection = styled.div`
   }
 
   button {
-    margin: 2rem 0;
+    margin: 2rem auto;
     background: ${({ theme }) => theme.primaryColor};
     border-color: ${({ theme }) => theme.primaryColor};
     color: ${({ theme }) => theme.white};

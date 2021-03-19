@@ -40,6 +40,15 @@ section {
     margin-top: 65px;
   }
   min-height: 80vh;
+
+  div {
+    margin-top: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+    margin-left: 155px;
+    }
+  }
 }
 
 button {
