@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  background: #ccc;
+  background: ${({ theme }) => theme.white};
   color: ${({ theme }) => theme.primaryColor};
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
@@ -35,9 +35,10 @@ img {
 section {
   margin: auto 1rem;
 
+
   @media (min-width: ${({ theme }) => theme.desktop}) {
-    margin: 65px 175px;
-    }
+    margin-top: 65px;
+  }
   min-height: 80vh;
 }
 
@@ -50,5 +51,6 @@ button {
 
 footer {
   text-align: center;
+  margin: 1rem 0;
 }
 `;

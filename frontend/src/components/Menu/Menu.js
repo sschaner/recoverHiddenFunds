@@ -7,9 +7,9 @@ const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
       <Link to='/' className='logo'>
-        <span className='display-block'>Home</span>
-        <span className='display-block'>Auction</span>
-        <span className='display-block'>Refunds</span>
+        <span className='display-block'>Recover</span>
+        <span className='display-block'>Hidden</span>
+        <span className='display-block'>Funds</span>
       </Link>
 
       <ul>

@@ -4,7 +4,7 @@ import { StyledHomeSection } from './HomeScreen.styled';
 const HomeScreen = () => {
   return (
     <StyledHomeSection>
-      <img src='/img/receive-money.png' />
+      <img src='/img/receive-money.png' alt='A hand fanning out money.' />
       <h1>
         We've Found<span className='display-block'>Your Money</span>
       </h1>
