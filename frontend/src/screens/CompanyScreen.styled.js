@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledCompanySection = styled.div`
-    @media (min-width: ${({ theme }) => theme.desktop}) {
-      margin-left: 160px;
-    }
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    margin-left: 160px;
+  }
   margin-top: 2rem;
   display: grid;
   grid-gap: 1rem;
