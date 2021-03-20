@@ -34,7 +34,8 @@ const FAQScreen = () => {
       </p>
       <h5 className='more-questions-title'>More questions?</h5>
       <p className='more-questions'>
-        Just give us a call. We’re here to serve you. Call (616) 402 - 4602.
+        Just give us a call. We’re here to serve you. Call Gynell at (248) 320 -
+        9095 or Steven at (616) 402 - 4602.
       </p>
 
       <img

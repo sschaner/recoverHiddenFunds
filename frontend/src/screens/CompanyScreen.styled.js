@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledCompanySection = styled.div`
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    margin-left: 155px;
+  }
   grid-template-areas:
     'companyTitle'
     'teamworkPhoto'
@@ -43,7 +49,11 @@ export const StyledCompanySection = styled.div`
 
   .company-title {
     grid-area: companyTitle;
-    font-size: 3rem;
+    font-size: 1.25rem;
+
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+      font-size: 2rem;
+    }
   }
 
   .teamwork-photo {

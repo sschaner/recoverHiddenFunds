@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledFAQSection = styled.div`
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    margin-left: 155px;
+  }
   grid-template-areas:
     'faqTitle'
     'faqPhoto'
@@ -54,10 +60,10 @@ export const StyledFAQSection = styled.div`
 
   .faq-title {
     grid-area: faqTitle;
-    font-size: 2rem;
+    font-size: 1.25rem;
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 

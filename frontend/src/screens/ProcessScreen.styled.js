@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledProcessSection = styled.div`
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    margin-left: 155px;
+  }
   grid-template-areas:
     'processTitle'
     'processPhoto'
@@ -36,10 +42,10 @@ export const StyledProcessSection = styled.div`
 
   .process-title {
     grid-area: processTitle;
-    font-size: 2rem;
+    font-size: 1.25rem;
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 

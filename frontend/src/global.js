@@ -42,12 +42,7 @@ section {
   min-height: 80vh;
 
   div {
-    margin-top: 2rem;
-    display: grid;
-    grid-gap: 1rem;
-    @media (min-width: ${({ theme }) => theme.desktop}) {
-    margin-left: 155px;
-    }
+    
   }
 }
 
@@ -56,6 +51,15 @@ button {
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: ${({ theme }) => theme.primaryColor};
+
+  &:hover {
+      color: ${({ theme }) => theme.secondaryColor};
+    }
 }
 
 footer {
