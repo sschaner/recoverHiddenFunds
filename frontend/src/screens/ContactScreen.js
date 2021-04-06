@@ -9,7 +9,7 @@ const ContactScreen = () => {
       <div className='member-one-container'>
         <img
           className='member-photo'
-          src='/img/woman.jpg'
+          src='/img/gynell.jpg'
           alt='Gynell Schaner.'
         />
         <h5>Gynell Schaner</h5>
@@ -27,7 +27,7 @@ const ContactScreen = () => {
       <div className='member-two-container'>
         <img
           className='member-photo'
-          src='/img/man.jpg'
+          src='/img/steven.jpg'
           alt='Steven Schaner.'
         />
         <h5>Steven Schaner</h5>

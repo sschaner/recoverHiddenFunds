@@ -1,42 +1,72 @@
 import React from 'react';
 import { bool, func } from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { StyledMenu } from './Menu.styled';
 
 const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
-      <Link to='/' className='logo'>
+      <NavLink to='/' className='logo'>
         <span className='display-block'>Recover</span>
         <span className='display-block'>Hidden</span>
         <span className='display-block'>Funds</span>
-      </Link>
+      </NavLink>
 
       <ul>
         <li>
-          <Link to='/' onClick={() => setOpen(!open)}>
+          <NavLink
+            exact
+            to='/'
+            onClick={() => setOpen(!open)}
+            className='main-nav'
+            activeClassName='main-nav-active'
+          >
             home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/company' onClick={() => setOpen(!open)}>
+          <NavLink
+            exact
+            to='/company'
+            onClick={() => setOpen(!open)}
+            className='main-nav'
+            activeClassName='main-nav-active'
+          >
             company
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/process' onClick={() => setOpen(!open)}>
+          <NavLink
+            exact
+            to='/process'
+            onClick={() => setOpen(!open)}
+            className='main-nav'
+            activeClassName='main-nav-active'
+          >
             process
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/faq' onClick={() => setOpen(!open)}>
+          <NavLink
+            exact
+            to='/faq'
+            onClick={() => setOpen(!open)}
+            className='main-nav'
+            activeClassName='main-nav-active'
+          >
             faq
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/contact' onClick={() => setOpen(!open)}>
+          <NavLink
+            exact
+            to='/contact'
+            onClick={() => setOpen(!open)}
+            className='main-nav'
+            activeClassName='main-nav-active'
+          >
             contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </StyledMenu>

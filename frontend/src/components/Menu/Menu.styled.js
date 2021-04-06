@@ -108,4 +108,12 @@ export const StyledMenu = styled.nav`
       }
     }
   }
+
+  .main-nav {
+    color: ${({ theme }) => theme.white};
+
+    &-active {
+      color: ${({ theme }) => theme.secondaryColor};
+    }
+  }
 `;
