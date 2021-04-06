@@ -39,7 +39,7 @@ export const StyledContactSection = styled.div`
     place-self: center;
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
-      width: 50%;
+      width: 75%;
     }
   }
 
