@@ -9,6 +9,7 @@ import CompanyScreen from './screens/CompanyScreen';
 import ProcessScreen from './screens/ProcessScreen';
 import FAQScreen from './screens/FAQScreen';
 import ContactScreen from './screens/ContactScreen';
+import ReviewsScreen from './screens/ReviewsScreen';
 import Footer from './components/Footer';
 
 const App = ({ open }) => {
@@ -23,6 +24,7 @@ const App = ({ open }) => {
           <Route path='/process' component={ProcessScreen} />
           <Route path='/faq' component={FAQScreen} />
           <Route path='/contact' component={ContactScreen} />
+          <Route path='/reviews' component={ReviewsScreen} />
         </section>
         <Footer />
       </Router>
