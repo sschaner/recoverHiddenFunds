@@ -10,6 +10,7 @@
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "mongoose": "^5.12.4",
+    "morgan": "^1.10.0",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

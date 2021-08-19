@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledHomeSection = styled.div`
   margin-top: 2rem;
+  margin-right: 0rem;
   display: grid;
   grid-gap: 0.5rem;
   @media (min-width: ${({ theme }) => theme.desktop}) {
